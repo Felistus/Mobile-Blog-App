@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "495512703929",
+    "firebase_url": "https://felisto-blog.firebaseio.com",
+    "project_id": "felisto-blog",
+    "storage_bucket": "felisto-blog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495512703929:android:f2992ef1c5f93c59ec5c68",
+        "android_client_info": {
+          "package_name": "com.felisto_blog.blogApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495512703929-jvpa7ve7fgdjj840ol2t7dam2l14agff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMkTAGNKlQSiJKa-r3rymhK8b0ABut1UE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495512703929-jvpa7ve7fgdjj840ol2t7dam2l14agff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

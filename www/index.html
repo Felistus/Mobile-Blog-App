@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">     
+        <title>Felistus: Blog</title>
+
+        <link rel="stylesheet" href="css/app.min.css"> <!-- app.js css link -->
+        <link rel="stylesheet" type="text/css" href="css/index.css"> <!-- custom css -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        
+
+    </head>
+    <body>
+<!-- login section -->
+        <div class="app-page" data-page="login">
+            <div class="app-content">
+                <div class="app-topbar">
+                    <div class="app-title">Citizens Report</div>
+                </div>
+                <div class="app-section">
+                    <form action="" method="">
+                        <h1 class="title">Login</h1>
+                        <div class="imgcontainer">
+                            <img src="img/logo.png" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="box">
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" placeholder="Enter Email Address" name="email" class="input" id="emailLogin" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" class="input" id="passwordLogin" required>
+                                
+                            <button type="submit" class="button">Login</button>
+
+                            <label>
+                            <input type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                    </form>
+                    <div class="box" style="background-color:#f1f1f1">
+                        <button type="button" data-target="signup" class="app-button register button">Register</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </div> <!--end of app-section-->
+            </div>
+        </div>
+<!-- signup section -->
+        <div class="app-page" data-page="signup">
+            <div class="app-content">
+                <div class="app-topbar">
+                    <div class="app-title">Citizens Report</div>
+                </div>
+                <div class="app-section">
+                    <form action="" method="" id="registerForm">
+                        <h1 class="title">Signup</h1>
+
+                        <div class="box">
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Enter First and Last Name" name="name" class="input" id="name" required>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" placeholder="Enter Email Address" name="email" class="input" id="emailRegister" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" class="input" id="passwordRegister" required>
+
+                            <label for="confirmPsw"><b>Confirm Password</b></label>
+                            <input type="password" placeholder="Re-enter Password" name="confirmPsw" class="input" id="confirmPassword" required>
+                                
+                            <button type="submit" class="button" id="createUser">Register</button>
+                        </div>
+                    </form>
+                    <div class="box" style="background-color:#f1f1f1">
+                        <button type="button" data-target="login" class="app-button register button">Login</button>
+                        <button type="button" data-target="create" class="app-button register button">create</button>
+                    </div>
+                </div> <!--end of app-section-->
+            </div>
+        </div>
+<!-- create post -->
+        <div class="app-page" data-page="create">
+            <div class="app-content">
+                <div class="app-topbar">
+                    <div class="app-title">Create Post</div>
+                </div>
+                <div class="app-section">
+                    <form> <!-- form start-->
+                        <div class="form-row box">
+                            <label for="postTitle">Title:</label>
+                            <input type="text" class="form-control input" placeholder="Enter title of post" name="postTitle" id="postTitle" required>
+                            
+                            <div class="col-12 cat">
+                                <label for="category">Category</label>
+                                <select name="category" id="categories">
+                                    <option value="accident">Accident</option>
+                                    <option value="fight">Fight</option>
+                                    <option value="riot">Riot</option>
+                                </select>
+                            </div>
+
+                           <div class="col-12 upload">
+                                <label for="filename">Upload Image</label>
+                                <input type="file" id="myFile" name="filename" nultiple>
+                           </div>
+
+                            <div class="col-12 content">
+                                <label for="content">Content</label>
+                                <textarea name="content" id="content" rows="3" class="form-control" required> </textarea>
+                            </div>
+                            
+                            <button type="submit" class="button" id="publish">Create Post</button>
+                        </div>              
+                    </form>
+
+                    <div class="box" style="background-color:#f1f1f1">
+                        <button type="button" data-target="login" class="app-button register button">Login</button>
+                        <button type="button" data-target="post" class="app-button register button">Posts</button>
+                    </div>
+        
+                </div> <!-- end of app-section -->
+            </div>
+        </div>
+
+<!-- post -->
+        <div class="app-page" data-page="post">
+            <div class="app-content">
+                <div class="app-topbar">
+                    <div class="app-title">Posts</div>
+                </div>
+                <div class="app-section" id="app-section">
+                    
+                    <div class="card">
+                        <div class="img" class="card-img">
+                             <img src="img/pexels-p.jpeg" alt="Avatar" class="picture">
+                        </div>
+                        <div class="container">
+                          <h4 class="card-title">
+                              <b>Massive Killing in Kaduna</b>
+                              <p>category: <span>Riot</span></p>
+                            </h4>
+                          <p class="card-content">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet incidunt deleniti maxime culpa quia assumenda. Autem ullam 
+                              <span id="dots">...</span>
+                              <span id="more">
+                                voluptate, hic rerum, quisquam temporibus sed facilis voluptates ut voluptatibus repellat accusamus esse vero quidem eos. 
+                                Magnam, facere. Eos deleniti enim adipisci exercitationem!
+                              </span>
+                          </p>
+                          <button id="myBtn">Read more</button>
+                        </div>
+                    </div>
+
+
+                    <div class="box" style="background-color:#f1f1f1">
+                        <button type="button" data-target="login" class="app-button register button">Login</button>
+                        <button type="button" data-target="create" class="app-button register button">Create Post</button>
+                    </div>
+        
+                </div> <!-- end of app-section -->
+            </div>
+        </div>
+
+
+
+        
+
+
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/app.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

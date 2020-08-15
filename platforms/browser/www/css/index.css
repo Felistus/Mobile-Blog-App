@@ -1,0 +1,113 @@
+form {border: 3px solid #f1f1f1;}
+.title{
+    text-align: center;
+}
+.input {
+  width: 100% !important;
+  padding: 12px 20px !important;
+  margin: 8px 0 !important;
+  display: inline-block !important;
+  border: 1px solid #ccc !important;
+  box-sizing: border-box !important;
+}
+
+.button {
+  background-color: #4CAF50 !important;
+  color: white !important;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.app-button {
+  width: auto !important;
+  padding: 0 18px !important;
+  border-radius: 4px !important;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.box {
+  padding: 16px !important;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+#categories{
+    width: 30vw !important;
+}
+.content, .cat, .upload{
+    margin: 7px 0 !important;
+}
+
+/* card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+  
+.container {
+    padding: 2px 16px;
+}
+
+.picture{
+    width: 100% !important;
+    height: 200px !important;
+}
+#more{
+    display: none;
+}
+#myBtn{
+    background-color: transparent;
+    border: none;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .register {
+     width: 100%;
+  }
+}
